@@ -145,7 +145,7 @@ static void a2_blockPropertySetter(NSObject *self, SEL _cmd, id block);
 		NSAlwaysAssert(copy, @"Property \"%@\" on class %s must be defined with the \"copy\" attribute", propertyName, class_getName(self));
 		free(copy);
 		
-		NSAlwaysAssert(![propertyMap objectForKey:propertyMap], @"Class \"%s\" already implements a \"%@\" property.", class_getName(self), propertyName);
+		NSAlwaysAssert(![propertyMap objectForKey:propertyName], @"Class \"%s\" already implements a \"%@\" property.", class_getName(self), propertyName);
 		
 		SEL getter = a2_getterForProperty(self, propertyName);
         IMP getterImplementation = (IMP) a2_blockPropertyGetter;
