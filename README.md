@@ -1,3 +1,7 @@
+### This repository is *deprecated* and is a mirror of A2DynamicDelegate 2.0.2. Please update your URLs to point to [pandamonia/BlocksKit](https://github.com/pandamonia/BlocksKit).
+
+------------
+
 # A2DynamicDelegate
 
 ## Overview
